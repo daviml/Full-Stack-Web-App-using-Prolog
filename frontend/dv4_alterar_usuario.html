@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>DV4 - Alterar Usuário</title>
+    <title>Alterar Usuário</title>
 </head>
 <body class="bg-light jumbotron">
 
     <div class="container jumbotron">
       <div style="padding-bottom: 5%;" class=" text-center">
-        <h2>DV4 - Alterar Usuário</h2>
+        <h2>Alterar Usuário</h2>
        </div>
 
        <div class="" style="height:50px;"></div>
@@ -20,22 +20,22 @@
           <form class="needs-validation" novalidate>
             
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class=" col-md-3  " for="name">Nome</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class=" col-md-2  " for="name">*Nome</label>
                 <input type="text" class=" form-control" id="name" placeholder="" value="" required>
               </div>
             </div>
 
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class=" col-md-3 " for="user">Usuário</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class=" col-md-2 " for="user">*Usuário</label>
                 <input type="text" class=" form-control" id="adress" placeholder="" value="" required>
               </div>
             </div>
 
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class="col-md-3 " for="statusUser">Status do usuário</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class="col-md-2" for="statusUser">*Status do usuário</label>
                 <select class="custom-select" id="statusUser" required>
                   <option value="">Selecione...</option>
                   <option>Ativo</option>
@@ -48,12 +48,12 @@
             </div>
 
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class="col-md-3 " for="typeUser">Tipo de usuário</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class="col-md-2 " for="typeUser">*Tipo de usuário</label>
                 <select class="custom-select" id="typeUser" required>
                   <option value="">Selecione...</option>
                   <option>Administrador</option>
-                  <option>Usuário padrão</option>
+                  <option>TESTE</option>
                 </select>
                 <div class="invalid-feedback">
                   Favor informar um tipo válido.
@@ -62,22 +62,22 @@
             </div>
 
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class=" col-md-3  " for="oldPassword">Senha Antiga</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class=" col-md-2  " for="oldPassword">*Senha Antiga</label>
                 <input type="password" class=" form-control" id="oldPassword" placeholder="" value="" required>
               </div>
             </div> 
 
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class=" col-md-3  " for="password">Senha</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class=" col-md-2  " for="password">*Senha</label>
                 <input type="password" class=" form-control" id="password" placeholder="" value="" required>
               </div>
             </div> 
               
             <div class="row">
-              <div class="input-group col-md-8 mb-3">
-                <label class=" col-md-3  " for="validationPassword">Repita a senha</label>
+              <div class="input-group col-md-11 mb-3">
+                <label class=" col-md-2  " for="validationPassword">*Repita a senha</label>
                 <input type="password" class=" form-control" id="validationPassword" placeholder="" value="" required>
               </div>
             </div> 
@@ -96,7 +96,9 @@
               </div>
             </div>
 
-           
+            <br>
+
+            <p style="font-family: 'Times New Roman'">*Preenchimento Obrigatório</p>
             
 
           </form>
