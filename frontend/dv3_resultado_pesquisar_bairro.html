@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Resultado da Pesquisa</title>
+</head>
+<body class="bg-light jumbotron">
+
+    <div class="container jumbotron">
+      <div style="padding-bottom: 5%;" class=" text-center">
+        <h2>Resultado da Pesquisa</h2>
+       </div>
+
+       <div class="" style="height:50px;"></div>
+       
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>TESTE</td> 
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>HAUER</td>
+          </tr>
+          </tbody>
+      </table> 
+
+      
+
+      <div style="padding-top: 5%;" class="row">
+                <div class="col-sm-2 ">
+                    <button type="button" class="btn btn-primary ">Voltar</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary">Visualizar</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary">Excluir</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary">Alterar</button>
+                </div>
+                <div class="col-sm-2 ">
+                    <button type="button" class="btn btn-primary ">Cadastrar</button>
+                </div>
+            </div>
+
+
+          
+    </div>
+    
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
