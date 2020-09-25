@@ -14,7 +14,7 @@
         cidade:atom,
         cep:atom,
         complemento:atom,
-        obeservacao:atom
+        observacao:atom
     ).
 
 arquivo_da_tabela(Arquivo):- db_attach(Arquivo,[]).    
