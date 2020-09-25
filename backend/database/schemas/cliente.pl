@@ -1,5 +1,5 @@
 :- module(
-    cliente,[arquivo_da_tabela/1]
+    cliente,[cliente/9]
 ).
 
 :- use_module(library(persistency)).

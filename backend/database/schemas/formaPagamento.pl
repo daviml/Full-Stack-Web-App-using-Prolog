@@ -1,11 +1,11 @@
 :- module(
-    pagamento,[arquivo_da_tabela/1]
+    formaPagamento,[formaPagamento/2]
 ).
 
 :- use_module(library(persistency)).
 
 :- persistent 
-    pagamento(
+    formaPagamento(
         idForma:positive_integer,
         nome:atom
     ).
@@ -13,18 +13,18 @@
 arquivo_da_tabela(Arquivo):- db_attach(Arquivo,[]).    
 
 insere(Idforma,Nome):-
-    with_mutex(pagamento,
-               assert_pagamento(
+    with_mutex(formaPagamento,
+               assert_formaPagamento(
                     Idforma,Nome)).
 
 remove(Idforma):-
-    with_mutex(pagamento,
-               retract_pagamento(
+    with_mutex(formaPagamento,
+               retract_formaPagamento(
                     Idforma, _Nome)).
 
 atualiza(Idforma,Nome):-
-    with_mutex(pagamento,
-               ( retractall_pagamento(
+    with_mutex(formaPagamento,
+               ( retractall_formaPagamento(
                     Idforma, _Nome),
-                 assert_pagamento(
+                 assert_formaPagamento(
                     Idforma,Nome)) ).                   

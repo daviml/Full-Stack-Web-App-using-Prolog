@@ -1,13 +1,13 @@
 :- module(
-    caixa,[arquivo_da_tabela/1]
+    caixa,[caixa/3]
 ).
 
 :- use_module(library(persistency)).
 
 :- persistent 
     caixa(
-        data2:date,
-        trocoInicial:positive_integer,
+        data2:atom,
+        trocoInicial:nonneg,
         totalVendas:positive_integer
     ).
 

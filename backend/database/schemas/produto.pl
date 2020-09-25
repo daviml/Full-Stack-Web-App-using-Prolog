@@ -1,5 +1,5 @@
 :- module(
-    produto,[arquivo_da_tabela/1]
+    produto,[produto/5]
 ).
 
 :- use_module(library(persistency)).

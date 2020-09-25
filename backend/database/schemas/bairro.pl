@@ -1,5 +1,5 @@
 :- module(
-    bairro,[arquivo_da_tabela/1]
+    bairro,[bairro/2]
 ).
 
 :- use_module(library(persistency)).

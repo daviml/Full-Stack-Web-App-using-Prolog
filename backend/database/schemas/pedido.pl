@@ -1,5 +1,5 @@
 :- module(
-    pedido,[arquivo_da_tabela/1]
+    pedido,[pedido/8]
 ).
 
 :- use_module(library(persistency)).
@@ -12,7 +12,7 @@
         idTaxa:positive_integer,
         tipoEntrega:atom,
         idCliente:positive_integer,
-        dataSolicitacao:date,
+        dataSolicitacao:atom,
         precoTotal:positive_integer
     ).
 

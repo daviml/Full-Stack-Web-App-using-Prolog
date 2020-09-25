@@ -1,29 +1,29 @@
 :- module(
-    status_usuario,[arquivo_da_tabela/1]
+    tipoEntrega,[tipoEntrega/1]
 ).
 
 :- use_module(library(persistency)).
 
 :- persistent 
-    status_usuario(
+    tipoEntrega(
         nome:atom
     ).
 
 arquivo_da_tabela(Arquivo):- db_attach(Arquivo,[]).    
 
 insere(Nome):-
-    with_mutex(status_usuario,
-               assert_status_usuario(
+    with_mutex(tipoEntrega,
+               assert_tipoEntrega(
                    Nome)).
 
 remove(Nome):-
-    with_mutex(status_usuario,
-               retract_status_usuario(
+    with_mutex(tipoEntrega,
+               retract_tipoEntrega(
                    Nome)).
 
 atualiza(Nome):-
-    with_mutex(status_usuario,
-               (retractall_status_usuario(
+    with_mutex(tipoEntrega,
+               (retractall_tipoEntrega(
                     Nome),
-                 assert_status_usuario(
+                 assert_tipoEntrega(
                     Nome)) ).                   

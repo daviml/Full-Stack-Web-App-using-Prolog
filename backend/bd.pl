@@ -1,5 +1,21 @@
 :- load_files([caminhos,
-    schemas(cliente)
+    schemas(bairro),
+    schemas(caixa),
+    schemas(categoria),
+    schemas(cliente),
+    schemas(comandaPedido),
+    schemas(entrega),
+    schemas(entregador),
+    schemas(formaPagamento),
+    schemas(itensPedido),
+    schemas(pedido),
+    schemas(produto),
+    schemas(situacao),
+    schemas(statusUsuario),
+    schemas(taxa),
+    schemas(tipoEntrega),
+    schemas(tipoUsuario),
+    schemas(usuario)
 ],
 [if(not_loaded),
 silent(true)
@@ -7,7 +23,23 @@ silent(true)
 
 :- initialization(inicializa_tabelas).
 
+tabela(bairro).
+tabela(caixa).
+tabela(categoria).
 tabela(cliente).
+tabela(comandaPedido).
+tabela(entrega).
+tabela(entregador).
+tabela(formaPagamento).
+tabela(itensPedido).
+tabela(pedido).
+tabela(produto).
+tabela(situacao).
+tabela(statusUsuario).
+tabela(taxa).
+tabela(tipoEntrega).
+tabela(tipoUsuario).
+tabela(usuario).
 
 inicializa_tabelas :-
   findall(Tabela, tabela(Tabela), Tabelas),

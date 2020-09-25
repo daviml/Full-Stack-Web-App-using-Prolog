@@ -1,5 +1,5 @@
 :- module(
-    usuario,[arquivo_da_tabela/1]
+    usuario,[usuario/5]
 ).
 
 :- use_module(library(persistency)).
@@ -10,7 +10,7 @@
         tipoUsuario:atom,
         statusUsuario:atom,
         nome:atom,
-        senha:password
+        senha:atom
     ).
 
 arquivo_da_tabela(Arquivo):- db_attach(Arquivo,[]).    

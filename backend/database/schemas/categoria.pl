@@ -1,5 +1,5 @@
 :- module(
-    categoria,[arquivo_da_tabela/1]
+    categoria,[categoria/3]
 ).
 
 :- use_module(library(persistency)).
@@ -8,7 +8,7 @@
     categoria(
         idCategoria:positive_integer,
         nome:atom,
-        numeroSabores:positive_integer,
+        numeroSabores:positive_integer
     ).
 
 arquivo_da_tabela(Arquivo):- db_attach(Arquivo,[]).    

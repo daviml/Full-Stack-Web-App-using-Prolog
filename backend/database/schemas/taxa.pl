@@ -1,5 +1,5 @@
 :- module(
-    taxa,[arquivo_da_tabela/1]
+    taxa,[taxa/3]
 ).
 
 :- use_module(library(persistency)).

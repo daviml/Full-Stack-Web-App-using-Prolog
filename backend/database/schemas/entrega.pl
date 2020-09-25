@@ -1,5 +1,5 @@
 :- module(
-    entrega,[arquivo_da_tabela/1]
+    entrega,[entrega/1]
 ).
 
 :- use_module(library(persistency)).
